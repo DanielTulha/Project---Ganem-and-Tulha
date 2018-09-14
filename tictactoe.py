@@ -11,13 +11,10 @@ def printTable(matrix):
         if i % 2 == 0:
             print (bar)
         else:
-            symbolNumber = 0
             for j in range(3):
+                    print ('|',end ='  %s  ' % board[row][j])
 
-                    print ('|',end ='  %s  ' % board[row][symbolNumber])
-                    symbolNumber += 1
-
-            print('|')
+            print('|') #prints the final element of the line and goes to the next one
 
             row += 1
     print(bar)
